@@ -21,12 +21,12 @@
 	<label for="id_y">Liczba 2: </label>
 	<input id="id_y" type="text" name="y" value="<?php if (isset($y)) print($y); ?>"/>
 	<input type="submit" value="Oblicz"/>
-<form/>
+</form>
 <?php 
 
 if(isset($messages)){
 	if(count($messages)>0){
-		echo '<ol style="margin: 20px; padding: 10px 10px 30px; border-radius: 5px; background-color: #0000ff; width: 300px;">';
+		echo '<ol style="margin: 20px; padding: 10px 10px 30px; border-radius: 5px; background-color: #f1f1f1; width: 300px;">';
 		foreach($messages as $key => $msg){
 			echo "<li>".$msg."</li>";
 		}
@@ -36,7 +36,7 @@ if(isset($messages)){
 ?>
 
 <?php if(isset($result)) {?>
-<div style="margin: 20px; padding: 10px; border-radius: 5px; background-color: #ffff00; width:300px;">
+<div style="margin: 20px; padding: 10px; border-radius: 5px; background-color:pink; width:300px;">
 <?php echo 'Wynik: '.$result; ?>
 </div>
 <?php } ?>

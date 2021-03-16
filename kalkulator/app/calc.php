@@ -17,7 +17,7 @@ if($y==""){
 	$messages[]="Nie podano liczby 2";
 }
 
-if(empty($message)){
+if(empty($messages)){
 	if(!is_numeric($x)){
 		$messages[]="Pierwsza wartosc nie jest liczba calkowita";
 	}
@@ -27,7 +27,7 @@ if(empty($message)){
 	}
 }
 
-if(empty($message)){
+if(empty($messages)){
 	
 	$x=intval($x);
 	$y=intval($y);
