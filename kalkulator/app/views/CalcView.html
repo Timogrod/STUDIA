@@ -1,0 +1,79 @@
+{extends file="main.html"}
+
+{block name=content}
+
+<div class="container">
+
+		<h2 class="text-center top-space">Kalkulator kredytowy </h2>
+		<br/>
+
+		<div class="row">
+			
+			<form action="{$conf->action_root}calcCompute" method="post" class="pure-form pure-form-stacked">
+				<legend>Kalkulator kredytu</legend><br/><br/>
+
+					<fieldset>
+					<label for="x">Kwota: </label>
+						<input id="x" type="text" name="x" value="{$form->x}"/><br/>
+					
+					<label for="op">Oprocentowanie</label>
+						<select id="op" name="op">
+	
+							{if isset($res->op_name)}
+							<option value="{$form->op}">ponownie: {$res->op_name}</option>
+							<option value="" disabled="true">---</option>
+							{/if}
+
+							<option value="5">5%</option>
+							<option value="10">10%</option>
+							<option value="15">15%</option>
+							<option value="20">20%</option>
+
+						</select>	
+
+					<label for="y">Lat: </label>
+						<input id="y" type="text" name="y" value="{$form->y}"/><br/>
+					
+					</fieldset>
+					<button type="submit" class="pure-button pure-button-primary">Oblicz</button>
+			</form>
+			
+		</div> <!-- /row -->
+		<div class="row">
+
+			{* wyświeltenie listy błędów, jeśli istnieją *}
+			{if $msgs->isError()}
+				<h4>Wystąpiły błędy: </h4>
+				<ol>
+				{foreach $msgs->getErrors() as $err}
+				{strip}
+					<li>{$err}</li>
+				{/strip}
+				{/foreach}
+				</ol>
+			{/if}
+
+			{* wyświeltenie listy informacji, jeśli istnieją *}
+			{if $msgs->isInfo()}
+				<h4>Informacje: </h4>
+				<ol>
+				{foreach $msgs->getInfos() as $inf}
+				{strip}
+					<li>{$inf}</li>
+				{/strip}
+				{/foreach}
+				</ol>
+			{/if}
+
+			{if isset($res->result)}
+				<h4>Miesieczna rata:</h4>
+				<p>
+				{$res->result}
+				</p>
+			{/if}
+
+		</div> <!-- /row -->
+
+</div>	<!-- /container -->
+
+{/block}

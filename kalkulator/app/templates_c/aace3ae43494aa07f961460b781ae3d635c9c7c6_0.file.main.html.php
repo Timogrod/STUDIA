@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-03-23 16:55:12
+/* Smarty version 3.1.30, created on 2021-03-23 12:12:56
   from "C:\xampp\htdocs\kalkulator\templates\main.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_605a0f608d27d7_12979004',
+  'unifunc' => 'content_6059cd38770f80_94755166',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aace3ae43494aa07f961460b781ae3d635c9c7c6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\kalkulator\\templates\\main.html',
-      1 => 1616514905,
+      1 => 1616497964,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_605a0f608d27d7_12979004 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6059cd38770f80_94755166 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -78,7 +78,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <div class="content">
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_272337961605a0f608d1540_12276795', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1090411826059cd3876fd03_19678863', 'content');
 ?>
 
 
@@ -104,7 +104,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_272337961605a0f608
                 <div class="col-md-6 widget">
                     <div class="widget-body">
                         <p class="text-right">
-                            Copyright &copy; 2021, Damian Szyda
+                            Copyright &copy; 2021, Marcin Jonik. Design: <a href="http://www.gettemplate.com" rel="designer">GetTemplate</a>
                         </p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_272337961605a0f608
 </body>
 </html><?php }
 /* {block 'content'} */
-class Block_272337961605a0f608d1540_12276795 extends Smarty_Internal_Block
+class Block_1090411826059cd3876fd03_19678863 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

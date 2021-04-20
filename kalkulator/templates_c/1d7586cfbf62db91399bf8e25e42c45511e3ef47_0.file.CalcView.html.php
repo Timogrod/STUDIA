@@ -1,38 +1,39 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-04-15 21:28:01
-  from "C:\xampp\htdocs\kalkulator\app\CalcView.html" */
+/* Smarty version 3.1.30, created on 2021-04-20 11:42:21
+  from "C:\xampp\htdocs\kalkulator\app\views\CalcView.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_607893c14ecfe1_45808804',
+  'unifunc' => 'content_607ea1fd53be28_27758655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'e1f854f03feb9b893a87bcfce5786df8bc951879' => 
+    '1d7586cfbf62db91399bf8e25e42c45511e3ef47' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\kalkulator\\app\\CalcView.html',
-      1 => 1616500779,
+      0 => 'C:\\xampp\\htdocs\\kalkulator\\app\\views\\CalcView.html',
+      1 => 1618911739,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:main.html' => 1,
   ),
 ),false)) {
-function content_607893c14ecfe1_45808804 (Smarty_Internal_Template $_smarty_tpl) {
+function content_607ea1fd53be28_27758655 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_454754539607893c14ebce0_51312641', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2027542018607ea1fd53b0d5_34112373', 'content');
 $_smarty_tpl->inheritance->endChild();
-$_smarty_tpl->_subTemplateRender(($_smarty_tpl->tpl_vars['conf']->value->root_path).("/templates/main.html"), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, true);
+$_smarty_tpl->_subTemplateRender("file:main.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'content'} */
-class Block_454754539607893c14ebce0_51312641 extends Smarty_Internal_Block
+class Block_2027542018607ea1fd53b0d5_34112373 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -45,8 +46,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 		<div class="row">
 			
-			<form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/app/calc_kred.php" method="post" class="pure-form pure-form-stacked">
+			<form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+calcCompute" method="post" class="pure-form pure-form-stacked">
 				<legend>Kalkulator kredytu</legend><br/><br/>
 
 					<fieldset>
@@ -75,9 +76,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 						<input id="y" type="text" name="y" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->y;?>
 "/><br/>
 					
-						
-						<button type="submit" value="Oblicz" class="pure-button pure-button-primary">Oblicz</button>
 					</fieldset>
+					<button type="submit" class="pure-button pure-button-primary">Oblicz</button>
 			</form>
 			
 		</div> <!-- /row -->

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-03-23 12:12:47
-  from "C:\xampp\htdocs\kalkulator\templates\main.html" */
+/* Smarty version 3.1.30, created on 2021-04-20 12:06:19
+  from "C:\xampp\htdocs\kalkulator\app\views\templates\main.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_6059cd2f5b4433_93686204',
+  'unifunc' => 'content_607ea79b8bc656_92128817',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'aace3ae43494aa07f961460b781ae3d635c9c7c6' => 
+    '92e746cfeb2c181f570913da75bd7d4d1598bcc2' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\kalkulator\\templates\\main.html',
-      1 => 1616497964,
+      0 => 'C:\\xampp\\htdocs\\kalkulator\\app\\views\\templates\\main.html',
+      1 => 1618913177,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6059cd2f5b4433_93686204 (Smarty_Internal_Template $_smarty_tpl) {
+function content_607ea79b8bc656_92128817 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -78,7 +78,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <div class="content">
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12103439676059cd2f5b2f01_43995509', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_758955571607ea79b8b9f33_67303842', 'content');
 ?>
 
 
@@ -104,7 +104,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12103439676059cd2f
                 <div class="col-md-6 widget">
                     <div class="widget-body">
                         <p class="text-right">
-                            Copyright &copy; 2021, Marcin Jonik. Design: <a href="http://www.gettemplate.com" rel="designer">GetTemplate</a>
+                            Copyright &copy; 2021, Damian Szyda.
                         </p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12103439676059cd2f
 </body>
 </html><?php }
 /* {block 'content'} */
-class Block_12103439676059cd2f5b2f01_43995509 extends Smarty_Internal_Block
+class Block_758955571607ea79b8b9f33_67303842 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
