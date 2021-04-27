@@ -1,21 +1,12 @@
 <?php 
 require_once 'init.php';
 
-switch ($action){
-    default:
-        include_once 'app/controllers/CalcCtrl.class.php';
-        $ctrl = new CalcCtrl();
-        $ctrl->generateView();
-        break;
-    case 'calcCompute':
-        include_once 'app/controllers/CalcCtrl.class.php';
-        $ctrl = new CalcCtrl();
-        $ctrl->process();
-        break;
-    case 'action1':
-        echo "żegnam";
-        break;
-    case 'action2':
-        echo "witam";
-        break;
-}
+getRouter()->setDefaultRoute('calcShow');
+getRouter()->setLoginRoute('login');
+
+getRouter()->addRoute('calcShow',       'CalcCtrl',     ['user','admin']);
+getRouter()->addRoute('calcCompute',    'CalcCtrl',     ['user','admin']);
+getRouter()->addRoute('login',          'LoginCtrl');
+getRouter()->addRoute('logout',         'LoginCtrl',    ['user','admin']);
+
+getRouter()->go();

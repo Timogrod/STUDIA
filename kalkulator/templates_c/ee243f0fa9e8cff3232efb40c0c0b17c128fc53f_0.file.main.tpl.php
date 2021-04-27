@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-04-20 11:04:54
-  from "C:\xampp\htdocs\kalkulator\app\views\templates\main.html" */
+/* Smarty version 3.1.30, created on 2021-04-27 12:25:00
+  from "C:\xampp\htdocs\kalkulator\app\views\templates\main.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_607e9936858f30_34492956',
+  'unifunc' => 'content_6087e67cf1c369_99387774',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '92e746cfeb2c181f570913da75bd7d4d1598bcc2' => 
+    'ee243f0fa9e8cff3232efb40c0c0b17c128fc53f' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\kalkulator\\app\\views\\templates\\main.html',
-      1 => 1616497964,
+      0 => 'C:\\xampp\\htdocs\\kalkulator\\app\\views\\templates\\main.tpl',
+      1 => 1619518860,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_607e9936858f30_34492956 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6087e67cf1c369_99387774 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -53,10 +53,8 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/app/inna_chroniona.php">Kolejna chroniona strona</a></li>
-					<li><a class="btn" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/app/security/logout.php">Wyloguj</a></li>
+					<li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+logout"  class="btn">Wyloguj</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -78,7 +76,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <div class="content">
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_349860311607e9936857ca0_55717236', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12888147306087e67cf1ad40_69490510', 'content');
 ?>
 
 
@@ -104,7 +102,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_349860311607e99368
                 <div class="col-md-6 widget">
                     <div class="widget-body">
                         <p class="text-right">
-                            Copyright &copy; 2021, Marcin Jonik. Design: <a href="http://www.gettemplate.com" rel="designer">GetTemplate</a>
+                            Copyright &copy; 2021, Damian Szyda
                         </p>
                     </div>
                 </div>
@@ -117,7 +115,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_349860311607e99368
 </body>
 </html><?php }
 /* {block 'content'} */
-class Block_349860311607e9936857ca0_55717236 extends Smarty_Internal_Block
+class Block_12888147306087e67cf1ad40_69490510 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

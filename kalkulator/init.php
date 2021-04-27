@@ -1,9 +1,11 @@
 <?php
-require_once dirname(__FILE__).'/core/Config.class.php';
-$conf = new Config();
-include dirname(__FILE__).'/config.php';
+require_once 'core/Config.class.php';
+$conf = new core\Config();
+include 'config.php';
 
-function &getConf(){global $conf; return $conf;}
+function &getConf(){
+    global $conf; return $conf;
+}
 
 require_once getConf()->root_path.'/core/Messages.class.php';
 $msgs = new Messages();
@@ -26,6 +28,21 @@ function &getSmarty(){
     return $smarty;
 }
 
-require_once getConf()->root_path.'/core/functions.php';
+require_once 'core/ClassLoader.class.php';
+$cloader = new core\ClassLoader();
+function &getLoader(){
+    global $cloader; return $cloader;
+}
 
-$action = getFromRequest('action');
+require_once 'core/Router.class.php';
+$router = new core\Router();
+function &getRouter(){
+    global $router; return $router;
+}
+
+require_once 'core/functions.php';
+
+session_start();
+$conf->roles = isset($_SESSION['_roles']) ? unserialize($_SESSION['_roles']) : array();
+
+$router->setAction( getFromRequest('action') );
