@@ -89,6 +89,33 @@ class CalcCtrl {
 			}
 	
 			getMessages()->addInfo('Wykonano obliczenia.');
+
+			try{
+				$database = new \Medoo\Medoo([
+					'database_type' => 'mysql',
+					'database_name' => 'kalkulator',
+					'server' => 'localhost',
+					'username' => 'root',
+					'password' => '',
+					'charset' => 'utf8',
+					'port' => 3306,
+					'option' => [
+						\PDO::ATTR_CASE => \PDO::CASE_NATURAL,
+						\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+					]
+				]);
+
+				$database->insert("wynik", [
+					"kwota" => $this->form->x,
+					"lat" => $this->form->y,
+					"oprocentowanie" => $this->form->op,
+					"rata" => $this->result->result,
+					"data" => date("Y-m-d H:i:s")
+				]);
+			} catch (\PDOException $ex){
+				getMessages()->addError("DB Error: ".$ex->getMessage());
+			}
+
 		}
 		
 		$this->generateView();

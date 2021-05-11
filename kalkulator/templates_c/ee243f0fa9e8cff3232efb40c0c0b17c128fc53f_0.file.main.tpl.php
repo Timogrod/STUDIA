@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2021-04-27 12:25:00
+/* Smarty version 3.1.30, created on 2021-05-11 10:51:50
   from "C:\xampp\htdocs\kalkulator\app\views\templates\main.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_6087e67cf1c369_99387774',
+  'unifunc' => 'content_609a45a6f15e16_20227797',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ee243f0fa9e8cff3232efb40c0c0b17c128fc53f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\kalkulator\\app\\views\\templates\\main.tpl',
-      1 => 1619518860,
+      1 => 1620723107,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6087e67cf1c369_99387774 (Smarty_Internal_Template $_smarty_tpl) {
+function content_609a45a6f15e16_20227797 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -76,7 +76,7 @@ logout"  class="btn">Wyloguj</a></li>
 <div class="content">
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12888147306087e67cf1ad40_69490510', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_509447742609a45a6f147c6_55697352', 'content');
 ?>
 
 
@@ -115,7 +115,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12888147306087e67c
 </body>
 </html><?php }
 /* {block 'content'} */
-class Block_12888147306087e67cf1ad40_69490510 extends Smarty_Internal_Block
+class Block_509447742609a45a6f147c6_55697352 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
